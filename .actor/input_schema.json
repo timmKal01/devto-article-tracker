@@ -1,0 +1,39 @@
+{
+    "title": "Dev.to Article Tracker Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "tag": {
+            "title": "Tag",
+            "type": "string",
+            "editor": "textfield",
+            "description": "dev.to tag to filter by, e.g. \"rust\", \"webdev\", \"javascript\", \"ai\". Leave blank for all recent articles across all tags."
+        },
+        "minReactions": {
+            "title": "Minimum reactions",
+            "type": "integer",
+            "editor": "number",
+            "description": "Only return articles with at least this many public reactions.",
+            "default": 0,
+            "minimum": 0
+        },
+        "daysBack": {
+            "title": "Days back",
+            "type": "integer",
+            "editor": "number",
+            "description": "How many days back from today to search, by publish date.",
+            "default": 7,
+            "minimum": 1,
+            "maximum": 90
+        },
+        "maxResults": {
+            "title": "Max results",
+            "type": "integer",
+            "editor": "number",
+            "description": "Maximum number of articles to return, most recently published first.",
+            "default": 25,
+            "minimum": 1,
+            "maximum": 100
+        }
+    }
+}

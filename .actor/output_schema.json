@@ -1,0 +1,11 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Output schema of Dev.to Article Tracker",
+    "properties": {
+        "results": {
+            "type": "string",
+            "title": "Articles",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}

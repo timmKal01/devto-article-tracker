@@ -1,0 +1,13 @@
+{
+    "actorSpecification": 1,
+    "name": "devto-article-tracker",
+    "title": "Dev.to Article Tracker — New Posts by Tag",
+    "description": "Track new dev.to articles by tag. Get title, description, author, reaction/comment counts, and link the moment a new post goes live, for content research and topic monitoring.",
+    "version": "0.1",
+    "meta": {
+        "templateId": "custom-no-proxy"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "dockerfile": "../Dockerfile"
+}
