@@ -1,0 +1,68 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "id",
+                    "title",
+                    "description",
+                    "tags",
+                    "author",
+                    "publicReactionsCount",
+                    "commentsCount",
+                    "readingTimeMinutes",
+                    "publishedAt",
+                    "url"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "id": {
+                        "label": "ID",
+                        "format": "number"
+                    },
+                    "title": {
+                        "label": "Title",
+                        "format": "text"
+                    },
+                    "description": {
+                        "label": "Description",
+                        "format": "text"
+                    },
+                    "tags": {
+                        "label": "Tags",
+                        "format": "array"
+                    },
+                    "author": {
+                        "label": "Author",
+                        "format": "text"
+                    },
+                    "publicReactionsCount": {
+                        "label": "Public reactions count",
+                        "format": "number"
+                    },
+                    "commentsCount": {
+                        "label": "Comments count",
+                        "format": "number"
+                    },
+                    "readingTimeMinutes": {
+                        "label": "Reading time minutes",
+                        "format": "number"
+                    },
+                    "publishedAt": {
+                        "label": "Published at",
+                        "format": "date"
+                    },
+                    "url": {
+                        "label": "URL",
+                        "format": "link"
+                    }
+                }
+            }
+        }
+    }
+}
